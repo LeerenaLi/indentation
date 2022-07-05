@@ -31,10 +31,10 @@
                     <a href="#one" class="navigation__link">Отступ задается от предыдущего элемента к следующему</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
+                    <a href="#two" class="navigation__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Для последнего элемента группы отступ обнуляется</a>
+                    <a href="#three" class="navigation__link">Для последнего элемента группы отступ обнуляется</a>
                 </li>
             </ol>
         </div>
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section class="two">
+    <section class="two" id="two">
         <div class="container">
             <h2 class="two__title title-h2">Отступ задается последнему возможному элементу в DOM-дереве</h2>
             <p class="two__text">
@@ -113,7 +113,37 @@
             <p class="two__text mb-0">
                 Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
             </p>
-            
+        </div>
+    </section>
+
+    <section class="three" id="three">
+        <div class="container">
+            <h2 class="three__title title-h2">Для последнего элемента группы отступ всегда обнуляется</h2>
+            <p class="three_text">
+                Для наглядности возьмём наш предыдущий пример с рецептами
+            </p>
+            <p class="three_text">
+                Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
+            </p>
+            <img src="img/image 8.jpg" alt="пример с рецептами" class="three__img three__img_center" height="600">
+            <p class="three__text">
+                В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
+            </p>
+            <img src="img/image 9.jpg" alt="пример с нижним марджин" class="three__img three__img_center" height="607px">
+            <img src="img/image 10.jpg" alt="пример с кодом" class="three__img" height="1058">
+            <p class="three_text">
+                Для большего понимания рассмотрим другой пример, который часто встречается на практике:
+            </p>
+            <img src="img/image 12.jpg" alt="пример с навигацией" class="three__img" height="88">
+            <img src="img/image 13.jpg" alt="код списка" class="three__img three__img_center" height="475">
+            <p class="three__text">
+                Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
+            </p>
+            <img src="img/image 14.jpg" alt="код отступов между пунктами меню" class="three__img three__img_center" height="110">
+            <p class="three__text">
+                Советую использовать псевдоклассы :last-child чаще других, например так:
+            </p>
+            <img src="img/image 15.jpg" alt="код с псевдоклассами" class="three__img three__img_center mb-0" height="383">
         </div>
     </section>
 

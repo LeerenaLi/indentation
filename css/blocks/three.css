@@ -1,0 +1,13 @@
+.three__img_center {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.three__img {
+    margin-bottom: 30px;
+}
+
+.three__img_center.mb-0 {
+    margin-bottom: 0;
+}
