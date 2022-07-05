@@ -46,7 +46,7 @@
                 Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
             </h2>
             <div class="one__block one__block_image">
-                <img src="img/image 1.jpg" alt="Картинка с марджинами" class="one__img" height="415">
+                <img src="img/image1.jpg" alt="Картинка с марджинами" class="one__img" height="415">
             </div>
             <div class="one__block one__block_text">
                 <p class="one__text">
@@ -75,7 +75,7 @@
                 </p>
             </div>
             <div class="one__block one__block_image">
-                <img src="img/image 2.jpg" alt="Картинка с паддингами" class="one__img" height="279">
+                <img src="img/image2.jpg" alt="Картинка с паддингами" class="one__img" height="279">
             </div>
         </div>
     </section>
@@ -86,13 +86,13 @@
             <p class="two__text">
                 Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
             </p>
-            <img src="img/image 3.jpg" alt="код списка" class="two__img" height="537">
-            <img src="img/image 4.jpg" alt="пример списка" class="two__img two__img_center" height="450">
+            <img src="img/image3.jpg" alt="код списка" class="two__img" height="537">
+            <img src="img/image4.jpg" alt="пример списка" class="two__img two__img_center" height="450">
             <p class="two__text">
                 Отступ делают за счёт соседних элементов, а не дочерних:
             </p>
             <div class="two__wrapper">
-                <img src="img/image 5.jpg" alt="пример отступов" class="two__img mb-0">
+                <img src="img/image5.jpg" alt="пример отступов" class="two__img mb-0">
                 <div class="two__descr">
                     <p class="two__text two__text_descr mb-0">
                         ВАЖНО: здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
@@ -105,11 +105,11 @@
             <p class="two__text">
                 Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
             </p>
-            <img src="img/image 6.jpg" alt="код заголовка" class="two__img two__img_center" height="146">
+            <img src="img/image6.jpg" alt="код заголовка" class="two__img two__img_center" height="146">
             <p class="two__text">
                 В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.
             </p>
-            <img src="img/image 7.jpg" alt="Пример padding-top" class="two__img two__img_center" height="704">
+            <img src="img/image7.jpg" alt="Пример padding-top" class="two__img two__img_center" height="704">
             <p class="two__text mb-0">
                 Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
             </p>
@@ -125,25 +125,25 @@
             <p class="three_text">
                 Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
             </p>
-            <img src="img/image 8.jpg" alt="пример с рецептами" class="three__img three__img_center" height="600">
+            <img src="img/image8.jpg" alt="пример с рецептами" class="three__img three__img_center" height="600">
             <p class="three__text">
                 В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
             </p>
-            <img src="img/image 9.jpg" alt="пример с нижним марджин" class="three__img three__img_center" height="607px">
-            <img src="img/image 10.jpg" alt="пример с кодом" class="three__img" height="1058">
+            <img src="img/image9.jpg" alt="пример с нижним марджин" class="three__img three__img_center" height="607">
+            <img src="img/image10.jpg" alt="пример с кодом" class="three__img" height="1058">
             <p class="three_text">
                 Для большего понимания рассмотрим другой пример, который часто встречается на практике:
             </p>
-            <img src="img/image 12.jpg" alt="пример с навигацией" class="three__img" height="88">
-            <img src="img/image 13.jpg" alt="код списка" class="three__img three__img_center" height="475">
+            <img src="img/image12.jpg" alt="пример с навигацией" class="three__img" height="88">
+            <img src="img/image13.jpg" alt="код списка" class="three__img three__img_center" height="475">
             <p class="three__text">
                 Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
             </p>
-            <img src="img/image 14.jpg" alt="код отступов между пунктами меню" class="three__img three__img_center" height="110">
+            <img src="img/image14.jpg" alt="код отступов между пунктами меню" class="three__img three__img_center" height="110">
             <p class="three__text">
                 Советую использовать псевдоклассы :last-child чаще других, например так:
             </p>
-            <img src="img/image 15.jpg" alt="код с псевдоклассами" class="three__img three__img_center mb-0" height="383">
+            <img src="img/image15.jpg" alt="код с псевдоклассами" class="three__img three__img_center mb-0" height="383">
         </div>
     </section>
 
