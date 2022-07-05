@@ -1,0 +1,27 @@
+.two__img {
+    margin-bottom: 30px;
+}
+
+.two__img_center {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.two__img.mb-0 {
+    margin-bottom: 0;
+}
+
+.two__wrapper {
+    border: 1px solid #000000;
+    margin-bottom: 30px;
+}
+
+.two__descr {
+    padding: 15px 30px 15px 30px;
+}
+
+.two__text_descr {
+    font-weight: 700;
+    color: #5E5E5E;
+}

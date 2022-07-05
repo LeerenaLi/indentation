@@ -80,5 +80,42 @@
         </div>
     </section>
 
+    <section class="two">
+        <div class="container">
+            <h2 class="two__title title-h2">Отступ задается последнему возможному элементу в DOM-дереве</h2>
+            <p class="two__text">
+                Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
+            </p>
+            <img src="img/image 3.jpg" alt="код списка" class="two__img" height="537">
+            <img src="img/image 4.jpg" alt="пример списка" class="two__img two__img_center" height="450">
+            <p class="two__text">
+                Отступ делают за счёт соседних элементов, а не дочерних:
+            </p>
+            <div class="two__wrapper">
+                <img src="img/image 5.jpg" alt="пример отступов" class="two__img mb-0">
+                <div class="two__descr">
+                    <p class="two__text two__text_descr mb-0">
+                        ВАЖНО: здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
+                    </p>
+                </div>
+            </div>
+            <p class="two__text">
+                Казалось бы, можно задать отступ параграфу  &lt;p&gt;, либо обёртке  &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+            </p>
+            <p class="two__text">
+                Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
+            </p>
+            <img src="img/image 6.jpg" alt="код заголовка" class="two__img two__img_center" height="146">
+            <p class="two__text">
+                В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.
+            </p>
+            <img src="img/image 7.jpg" alt="Пример padding-top" class="two__img two__img_center" height="704">
+            <p class="two__text mb-0">
+                Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
+            </p>
+            
+        </div>
+    </section>
+
 </body>
 </html>
