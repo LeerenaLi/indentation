@@ -1,11 +1,15 @@
-.introduction {
+.article {
     padding-top: 60px;
 }
 
-.introduction__title {
+.article__title {
     font-weight: 900;
     font-size: 60px;
     line-height: 120%;
     margin: 0;
     margin-bottom: 30px;
+}
+
+.container__article {
+    padding-bottom: 50px;
 }
