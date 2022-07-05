@@ -35,6 +35,11 @@ ul {
     list-style: none;
 }
 
+ol {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, p, figure, fieldset {
     margin: 0;
 }
