@@ -61,7 +61,12 @@ section {
 .title-h2 {
     font-weight: 900;
     font-size: 36px;
-    line-height: 120%
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 .text_last {

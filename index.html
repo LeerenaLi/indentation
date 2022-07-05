@@ -28,7 +28,7 @@
             <h2 class="navigation__title">Содержание:</h2>
             <ol class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">Отступ задается от предыдущего элемента к следующему</a>
+                    <a href="#one" class="navigation__link">Отступ задается от предыдущего элемента к следующему</a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
@@ -37,6 +37,46 @@
                     <a href="#" class="navigation__link">Для последнего элемента группы отступ обнуляется</a>
                 </li>
             </ol>
+        </div>
+    </section>
+
+    <section class="one" id="one">
+        <div class="container">
+            <h2 class="one__title title-h2">
+                Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
+            </h2>
+            <div class="one__block one__block_image">
+                <img src="img/image 1.jpg" alt="Картинка с марджинами" class="one__img" height="415">
+            </div>
+            <div class="one__block one__block_text">
+                <p class="one__text">
+                    <strong>ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.
+                </p>
+                <p class="one__text">
+                    Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.
+                </p>
+                <p class="one__text">
+                    (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.
+                </p>
+                <p class="one__text mb-0">
+                    Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+                </p>
+            </div>
+
+            <div class="one__block one__block_text">
+                <p class="one__text">
+                    Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.
+                </p>
+                <p class="one__text">
+                    Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
+                </p>
+                <p class="one__text mb-0">
+                    Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
+                </p>
+            </div>
+            <div class="one__block one__block_image">
+                <img src="img/image 2.jpg" alt="Картинка с паддингами" class="one__img" height="279">
+            </div>
         </div>
     </section>
 

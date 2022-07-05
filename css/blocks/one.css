@@ -1,0 +1,22 @@
+.one {
+    padding-top: 50px;
+}
+
+.one__block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.one__block:first-of-type {
+   margin-right: 30px;
+   margin-bottom: 30px;
+}
+
+.one__block_text {
+    max-width: 485px;
+}
+
+.one__block_text:nth-last-of-type(2) {
+    margin-right: 35px;
+    max-width: 480px;
+}
